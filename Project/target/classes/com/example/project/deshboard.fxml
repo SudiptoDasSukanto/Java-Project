@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.SigninController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="625.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.dashboardController">
    <children>
       <AnchorPane layoutX="-7.0" prefHeight="153.0" prefWidth="827.0" style="-fx-background-color: #0589ff;">
          <children>
@@ -23,7 +23,7 @@
             </Button>
          </children>
       </AnchorPane>
-      <Button fx:id="student" layoutX="180.0" layoutY="224.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="95.0" text="Student" />
+      <Button fx:id="student" layoutX="180.0" layoutY="224.0" mnemonicParsing="false" onAction="#studentInformation" prefHeight="55.0" prefWidth="95.0" text="Student" />
       <Button fx:id="provost" layoutX="575.0" layoutY="224.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="95.0" text="Provost" />
       <Button fx:id="stuff" layoutX="180.0" layoutY="341.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="95.0" text="Stuff" />
       <Button fx:id="notice" layoutX="586.0" layoutY="341.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="95.0" text="Notice" />

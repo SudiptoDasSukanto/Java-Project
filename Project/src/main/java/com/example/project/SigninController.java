@@ -73,15 +73,6 @@ public class SigninController {
 
     }
 
-    public void enterRegistration(ActionEvent event) throws IOException {
 
-        root2 = FXMLLoader.load(getClass().getResource("Registration.fxml"));
-        stage = (Stage)((Node) event.getSource()).getScene().getWindow();
-        scene = new Scene(root2,818,800);
-        stage.setTitle("Registration Form");
-        stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
-    }
 
 }
