@@ -1,22 +1,41 @@
 package com.example.project;
 
 public class studentList {
-    Integer StudentID ;
-        String StudentNAME , DEPARTMENT , PHNno , ROOMno, SESSION , ADDRESS ,BLOODGroup ;
+        Integer Session ,RegistrationNo,ROOMno,GurdianPHNno,studentPhn;
+        String StudentNAME , DEPARTMENT , BLOODGroup,  ADDRESS , Email ;
 
-    public studentList(Integer StudentID, String StudentNAME, String DEPARTMENT, String PHNno, String ROOMno, String SESSION, String ADDRESS, String BLOODGroup) {
-        this.StudentID = StudentID;
-        this.StudentNAME = StudentNAME;
-        this.DEPARTMENT = DEPARTMENT;
-        this.PHNno = PHNno;
-        this.ROOMno = ROOMno;
-        this.SESSION = SESSION;
-        this.ADDRESS = ADDRESS;
-        this.BLOODGroup = BLOODGroup;
+
+    public studentList(String studentName, String department, int sessionStudent, int regestrationNo, String bloodGrp, int roomNo, int gurdiansPhoneNumber, int studentPhnNum, String homeTown, String studentEmail) {
+        this.StudentNAME = studentName ;
+        this.DEPARTMENT = department ;
+        this.Session =  sessionStudent ;
+        this.RegistrationNo = regestrationNo ;
+        this.BLOODGroup = bloodGrp ;
+        this.ROOMno = roomNo ;
+        this.GurdianPHNno = gurdiansPhoneNumber;
+        this.studentPhn = studentPhnNum;
+        this.ADDRESS = homeTown ;
+        this.Email =studentEmail ;
     }
 
-    public Integer getStudentID() {
-        return StudentID;
+    public Integer getSession() {
+        return Session;
+    }
+
+    public Integer getRegistrationNo() {
+        return RegistrationNo;
+    }
+
+    public Integer getROOMno() {
+        return ROOMno;
+    }
+
+    public Integer getGurdianPHNno() {
+        return GurdianPHNno;
+    }
+
+    public Integer getStudentPhn() {
+        return studentPhn;
     }
 
     public String getStudentNAME() {
@@ -27,28 +46,36 @@ public class studentList {
         return DEPARTMENT;
     }
 
-    public String getPHNno() {
-        return PHNno;
-    }
-
-    public String getROOMno() {
-        return ROOMno;
-    }
-
-    public String getSESSION() {
-        return SESSION;
+    public String getBLOODGroup() {
+        return BLOODGroup;
     }
 
     public String getADDRESS() {
         return ADDRESS;
     }
 
-    public String getBLOODGroup() {
-        return BLOODGroup;
+    public String getEmail() {
+        return Email;
     }
 
-    public void setStudentID(Integer studentID) {
-        StudentID = studentID;
+    public void setSession(Integer session) {
+        Session = session;
+    }
+
+    public void setRegistrationNo(Integer registrationNo) {
+        RegistrationNo = registrationNo;
+    }
+
+    public void setROOMno(Integer ROOMno) {
+        this.ROOMno = ROOMno;
+    }
+
+    public void setGurdianPHNno(Integer gurdianPHNno) {
+        GurdianPHNno = gurdianPHNno;
+    }
+
+    public void setStudentPhn(Integer studentPhn) {
+        this.studentPhn = studentPhn;
     }
 
     public void setStudentNAME(String studentNAME) {
@@ -59,23 +86,15 @@ public class studentList {
         this.DEPARTMENT = DEPARTMENT;
     }
 
-    public void setPHNno(String PHNno) {
-        this.PHNno = PHNno;
-    }
-
-    public void setROOMno(String ROOMno) {
-        this.ROOMno = ROOMno;
-    }
-
-    public void setSESSION(String SESSION) {
-        this.SESSION = SESSION;
+    public void setBLOODGroup(String BLOODGroup) {
+        this.BLOODGroup = BLOODGroup;
     }
 
     public void setADDRESS(String ADDRESS) {
         this.ADDRESS = ADDRESS;
     }
 
-    public void setBLOODGroup(String BLOODGroup) {
-        this.BLOODGroup = BLOODGroup;
+    public void setEmail(String email) {
+        Email = email;
     }
 }

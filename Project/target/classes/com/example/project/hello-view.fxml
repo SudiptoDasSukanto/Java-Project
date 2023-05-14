@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #457834;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.HelloController">
+   <children>
+      <Button fx:id="login" layoutX="353.0" layoutY="437.0" mnemonicParsing="false" onAction="#switchToScene3_teacherLogin" style="-fx-background-color: #342378;" text="login" textFill="#bf1414" />
+      <Label fx:id="label1" layoutX="335.0" layoutY="111.0" prefHeight="140.0" prefWidth="276.0" text="fyfydfyhgfufutf" />
+   </children>
+</AnchorPane>

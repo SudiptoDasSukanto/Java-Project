@@ -35,6 +35,7 @@ public class SigninController {
 
 
 
+
     public void teacherLogin(ActionEvent event) throws IOException {
 
         if(!usernameTextField.getText().isBlank() && !passwordPasswordField.getText().isBlank()){
@@ -71,6 +72,16 @@ public class SigninController {
             loginmessageLabel.setText("Please set Username and Password");
         }
 
+    }
+
+    public void signUpPage(ActionEvent event) throws IOException{
+        root2 = FXMLLoader.load(getClass().getResource("signUp.fxml"));
+        stage = (Stage)((Node) event.getSource()).getScene().getWindow();
+        scene = new Scene(root2);
+        stage.setTitle("SignUp Page");
+        stage.setResizable(false);
+        stage.setScene(scene);
+        stage.show();
     }
 
 
